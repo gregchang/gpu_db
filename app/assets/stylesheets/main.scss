@@ -1,3 +1,19 @@
 // Place all the styles related to the Main controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  //text-align: center;
+}
+
+.starter-template h1 {
+  //text-align: center;
+}
+
+.tooltip-inner {
+  min-width: 190%;
+}
