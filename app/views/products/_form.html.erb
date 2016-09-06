@@ -1,0 +1,117 @@
+<%= form_for(product) do |f| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :designer %>
+    <%= f.text_area :designer %>
+  </div>
+
+  <div class="field">
+    <%= f.label :model %>
+    <%= f.text_area :model %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_area :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :part %>
+    <%= f.text_area :part %>
+  </div>
+
+  <div class="field">
+    <%= f.label :boostClock %>
+    <%= f.number_field :boostClock %>
+  </div>
+
+  <div class="field">
+    <%= f.label :baseClock %>
+    <%= f.number_field :baseClock %>
+  </div>
+
+  <div class="field">
+    <%= f.label :memClock %>
+    <%= f.number_field :memClock %>
+  </div>
+
+  <div class="field">
+    <%= f.label :vram %>
+    <%= f.number_field :vram %>
+  </div>
+
+  <div class="field">
+    <%= f.label :length %>
+    <%= f.text_field :length %>
+  </div>
+
+  <div class="field">
+    <%= f.label :width %>
+    <%= f.text_field :width %>
+  </div>
+
+  <div class="field">
+    <%= f.label :height %>
+    <%= f.text_field :height %>
+  </div>
+
+  <div class="field">
+    <%= f.label :backplate %>
+    <%= f.number_field :backplate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :warranty %>
+    <%= f.number_field :warranty %>
+  </div>
+
+  <div class="field">
+    <%= f.label :msrp %>
+    <%= f.number_field :msrp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :manurl %>
+    <%= f.text_area :manurl %>
+  </div>
+
+  <div class="field">
+    <%= f.label :power %>
+    <%= f.text_area :power %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ports %>
+    <%= f.number_field :ports %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ports_detailed %>
+    <%= f.text_area :ports_detailed %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cooling %>
+    <%= f.text_area :cooling %>
+  </div>
+
+  <div class="field">
+    <%= f.label :imgurl %>
+    <%= f.text_area :imgurl %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

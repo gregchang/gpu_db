@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Designer</th>
+      <th>Model</th>
+      <th>Name</th>
+      <th>Part</th>
+      <th>Boostclock</th>
+      <th>Baseclock</th>
+      <th>Memclock</th>
+      <th>Vram</th>
+      <th>Length</th>
+      <th>Width</th>
+      <th>Height</th>
+      <th>Backplate</th>
+      <th>Warranty</th>
+      <th>Msrp</th>
+      <th>Manurl</th>
+      <th>Power</th>
+      <th>Ports</th>
+      <th>Ports detailed</th>
+      <th>Cooling</th>
+      <th>Imgurl</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.designer %></td>
+        <td><%= product.model %></td>
+        <td><%= product.name %></td>
+        <td><%= product.part %></td>
+        <td><%= product.boostClock %></td>
+        <td><%= product.baseClock %></td>
+        <td><%= product.memClock %></td>
+        <td><%= product.vram %></td>
+        <td><%= product.length %></td>
+        <td><%= product.width %></td>
+        <td><%= product.height %></td>
+        <td><%= product.backplate %></td>
+        <td><%= product.warranty %></td>
+        <td><%= product.msrp %></td>
+        <td><%= product.manurl %></td>
+        <td><%= product.power %></td>
+        <td><%= product.ports %></td>
+        <td><%= product.ports_detailed %></td>
+        <td><%= product.cooling %></td>
+        <td><%= product.imgurl %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>

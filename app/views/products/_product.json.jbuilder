@@ -1,0 +1,2 @@
+json.extract! product, :id, :designer, :model, :name, :part, :boostClock, :baseClock, :memClock, :vram, :length, :width, :height, :backplate, :warranty, :msrp, :manurl, :power, :ports, :ports_detailed, :cooling, :imgurl, :created_at, :updated_at
+json.url product_url(product, format: :json)

@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  designer: MyText
+  model: MyText
+  name: MyText
+  part: MyText
+  boostClock: 1
+  baseClock: 1
+  memClock: 1
+  vram: 1
+  length: 1.5
+  width: 1.5
+  height: 1.5
+  backplate: 1
+  warranty: 1
+  msrp: 1
+  manurl: MyText
+  power: MyText
+  ports: 1
+  ports_detailed: MyText
+  cooling: MyText
+  imgurl: MyText
+
+two:
+  designer: MyText
+  model: MyText
+  name: MyText
+  part: MyText
+  boostClock: 1
+  baseClock: 1
+  memClock: 1
+  vram: 1
+  length: 1.5
+  width: 1.5
+  height: 1.5
+  backplate: 1
+  warranty: 1
+  msrp: 1
+  manurl: MyText
+  power: MyText
+  ports: 1
+  ports_detailed: MyText
+  cooling: MyText
+  imgurl: MyText
