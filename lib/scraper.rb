@@ -10,7 +10,7 @@ class Scraper
 
     db_row_count = Product.count(:name)
     puts "aloha"
-    
+
     # con = PG.connect :dbname => 'postgres', :user => 'postgres',
     #                  :password => 'dbpassqwerty'
     # db = SQLite3::Database.open 'db/development.sqlite3'
@@ -20,7 +20,7 @@ class Scraper
 
     # db_row_count = (con.exec "SELECT COUNT(*) FROM specs")[0]["count"].to_i
     puts db_row_count
-    return
+
 
     if db_row_count > 0
       puts "Database not empty"
