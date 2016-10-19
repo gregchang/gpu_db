@@ -72,7 +72,8 @@
       <tbody>
       <% Product.all.each do |row| %>
           <tr>
-            <td><%= row["name"] %> <a target="_blank" href="<%= row["imgurl"] %>" data-toggle="tooltip" data-placement="right" title="<img src='<%= row["imgurl"] %>' />">Image</a>
+            <td><%= row["name"] %>
+              <a target="_blank" href="<%= row["imgurl"] %>" data-toggle="tooltip" data-placement="right" title="<img src='<%= row["imgurl"] %>' />">Image</a>
             </td>
             <td><%= row["length"] %></td>
             <td><%= row["width"] %></td>
@@ -93,11 +94,8 @@
     </table>
 
 
-
   </div>
 </div>
-
-
 
 
 <!-- Latest compiled and minified JavaScript -->
