@@ -111,12 +111,11 @@ $(document).ready(function () {
     //
     // })
 
-    $('#table_id').DataTable();
+    // Initially display none to hide HTML table
+    $('#table_id').show().DataTable();
 
     $('[data-toggle="tooltip"]').tooltip({
         html: true
     });
-
-
 
 });

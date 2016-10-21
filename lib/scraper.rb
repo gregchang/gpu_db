@@ -5,7 +5,7 @@ class Scraper
 
   def main
 
-    puts 'scraper'
+    # puts 'scraper'
     count=1
 
     db_row_count = Product.count(:name)
@@ -19,11 +19,11 @@ class Scraper
     # specs(Id INTEGER PRIMARY KEY, designer TEXT, model TEXT, name TEXT, part TEXT, boostClock INTEGER, baseClock INTEGER, memClock INTEGER, vram INTEGER, length REAL, width REAL, height REAL, backplate INTEGER, warranty INTEGER, msrp INTEGER, manurl TEXT, power TEXT, ports INTEGER, ports_detailed TEXT, cooling TEXT, imgurl TEXT)"
 
     # db_row_count = (con.exec "SELECT COUNT(*) FROM specs")[0]["count"].to_i
-    puts db_row_count
+    puts "DB has #{db_row_count} rows"
 
 
     if db_row_count > 0
-      puts "Database not empty"
+      puts "Database not empty, scraper stopping"
       return
     end
 
